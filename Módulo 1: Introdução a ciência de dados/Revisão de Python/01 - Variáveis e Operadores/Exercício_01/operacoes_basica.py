@@ -1,14 +1,22 @@
-def soma(num1, num2):
-    return num1 + num2
 
-def subtracao(num1, num2):
-    return num1 - num2
+def main():
+    
+    num1 = int(input("Digite o primeiro número inteiro: "))
+    num2 = int(input("Digite o segundo número inteiro: "))
 
-def multiplicacao(num1, num2):
-    return num1 * num2
+    soma = num1 + num2
+    subtracao = num1 - num2
+    multiplicacao = num1 * num2
 
-def divisao(num1, num2):
     if num2 != 0:
-        return num1 / num2
+        divisao = num1 / num2
     else:
-        return "Não é possível divisão por zero!"
+        divisao = "Não é possível divisão por zero!"
+   
+    print(f"Soma: {soma}")
+    print(f"Subtração: {subtracao}")
+    print(f"Multiplicação: {multiplicacao}")
+    print(f"Divisão: {divisao}")
+
+if __name__ == "__main__":
+    main()
